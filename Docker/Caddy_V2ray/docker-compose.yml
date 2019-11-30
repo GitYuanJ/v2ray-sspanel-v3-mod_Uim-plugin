@@ -2,7 +2,7 @@ version: '2'
 
 services:
  v2ray:
-    image: armeoun/tlsray_v3:v2ray
+    image: armeoun/v2_tlsws:go
     restart: always
     network_mode: "host"
     environment:
@@ -22,7 +22,7 @@ services:
         max-file: "3"
 
  caddy:
-    image: armeoun/tlsray_v3:caddy
+    image: armeoun/v2_tlsws:caddy
     restart: always
     environment:
       - ACME_AGREE=true
