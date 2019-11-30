@@ -2,7 +2,7 @@ version: '2'
 
 services:
  v2ray:
-    image: tlsray_v3:v2ray
+    image: armeoun/tlsray_v3:v2ray
     restart: always
     network_mode: "host"
     environment:
